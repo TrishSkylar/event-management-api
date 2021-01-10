@@ -1,0 +1,1 @@
+exports.typeJSON = request => request.get('Content-Type') === 'application/json';
