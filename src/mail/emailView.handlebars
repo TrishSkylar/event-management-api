@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email {{ appName }}</title>
+</head>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial;
+      color: black;
+      font-size: 16px;
+    }
+    .container{
+      min-width: 300px;
+      width: 50%;
+      background: white;
+      padding: 25px 40px;
+    }
+    .attr{
+      margin: 20px 0;
+    }
+  </style>
+<body>
+  <div class="container">
+    <h1 class="attr">{{ person }} sent a message from {{ appName }}</h1>
+    <p class="attr">{{ message }}</p>
+    <p class="attr">Sender: {{ email }}</p>
+  </div>
+</body>
+</html>
